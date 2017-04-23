@@ -1,2 +1,4 @@
-# l10n_cl_payroll_previred
-Recursos Humanos Chile &amp; Previred
+# Módulo de Recursos Humanos Chile
+- Modulos para Recursos Humanos
+- Previred
+
