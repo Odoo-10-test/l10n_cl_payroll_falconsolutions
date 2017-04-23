@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Menú superior o principal: no hereda de otro menú -->
+    <menuitem id="payroll_menu" name="RR.HH" sequence="10"/>
+
+    <!-- Menú Secundario: Hereda del menú principal -->
+    <menuitem id="menu_payroll_config" name="Indicators" parent="payroll_menu" sequence="10"/>
+
+</odoo>

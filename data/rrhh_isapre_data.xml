@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="rrhh_isapre_01" model="rrhh.isapre">
+            <field name="name">FONASA</field>
+            <field name="rut">61603000-0</field>
+        </record>
+        <record id="rrhh_isapre_02" model="rrhh.isapre">
+            <field name="name">COLMENA GOLDEN CROSS</field>
+            <field name="rut">94954000-6</field>
+        </record>
+        <record id="rrhh_isapre_03" model="rrhh.isapre">
+            <field name="name">BANMEDICA</field>
+            <field name="rut">96572800-7</field>
+        </record>
+        <record id="rrhh_isapre_04" model="rrhh.isapre">
+            <field name="name">CONSALUD</field>
+            <field name="rut">96856780-2</field>
+        </record>
+        <record id="rrhh_isapre_05" model="rrhh.isapre">
+            <field name="name">MAS VIDA</field>
+            <field name="rut"></field>
+        </record>
+        <record id="rrhh_isapre_06" model="rrhh.isapre">
+            <field name="name">VIDA TRES</field>
+            <field name="rut"></field>
+        </record>
+        <record id="rrhh_isapre_07" model="rrhh.isapre">
+            <field name="name">CRUZ BLANCA</field>
+            <field name="rut"></field>
+        </record>
+    </data>
+</odoo>

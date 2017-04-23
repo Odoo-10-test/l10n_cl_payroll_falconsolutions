@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+
+    <record id="view_form_rrhh_isapre" model="ir.ui.view">
+             <field name="name">view.form.rrhh.isapre</field>
+             <field name="model">rrhh.isapre</field>
+             <field name="arch" type="xml">
+                <form string="Listado de Isapres ">
+                  <header>
+                  </header>
+                  <sheet>
+                    <legend>Grupo APU</legend>
+                       <group>
+                          <group>
+                             <field name="rut"/>
+                             <field name="name"/>
+                          </group>
+                       </group>
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_rrhh_isapre" model="ir.ui.view">
+             <field name="name">view.tree.rrhh.isapre</field>
+             <field name="model">rrhh.isapre</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="rut"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_rrhh_isapre" model="ir.actions.act_window">
+            <field name="name">Isapres</field>
+            <field name="res_model">rrhh.isapre</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="rrhh_isapre_menu"
+        name="Salud"
+        parent="menu_payroll_config"
+        sequence="30"
+        action="action_rrhh_isapre" />
+
+     </data>
+</odoo>

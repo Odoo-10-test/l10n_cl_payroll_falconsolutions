@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+     <record id="l10n_cl_payroll_hr_contract_form" model="ir.ui.view">
+            <field name="name">l10n_cl_payroll.hr_contract.form</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+            <field name="arch" type="xml">
+               <field name="wage" position="after" >
+                    <field name="sueldo_moneda" required="1"/>
+                </field>
+            </field>
+        </record>
+</data>
+</odoo>

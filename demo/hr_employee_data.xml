@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="l10n_cl_payroll_hr_empoyee_1" model="hr.employee">
+            <field name="name">Marlon</field>
+            <field name="rh_rut">24.063.888-6</field>
+            <field name="rh_last_name">Falcón</field>
+            <field name="rh_slast_name">Hernández</field>
+            <field name="work_email">mfalcon@falconsolutions.cl</field>
+            <field name="work_phone">+56942994534</field>
+            <field name="work_location">Building 1, Second Floor</field>
+        </record>
+    </data>
+</odoo>

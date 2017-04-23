@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="CIMPONIBLE" model="hr.salary.rule.category">
+            <field name="name">Imponible</field>
+            <field name="code">CIMPONIBLE</field>
+        </record>
+        <record id="CNOIMPO" model="hr.salary.rule.category">
+            <field name="name">No Imponible</field>
+            <field name="code">CNOIMPO</field>
+        </record>
+        <record id="CDED" model="hr.salary.rule.category">
+            <field name="name">Descuentos</field>
+            <field name="code">CDED</field>
+        </record>
+        <record id="CODED" model="hr.salary.rule.category">
+            <field name="name">Otros Descuentos</field>
+            <field name="code">CODED</field>
+        </record>
+        <record id="CCOMP" model="hr.salary.rule.category">
+            <field name="name">Aportes de la empresa</field>
+            <field name="code">CCOMP</field>
+        </record>
+        <record id="CPREV" model="hr.salary.rule.category">
+            <field name="name">Prevision</field>
+            <field name="code">CPREV</field>
+        </record>
+        <record id="CSALUD" model="hr.salary.rule.category">
+            <field name="name">Salud</field>
+            <field name="code">CSALUD</field>
+        </record>
+        <record id="CSUB" model="hr.salary.rule.category">
+            <field name="name">Subtotal</field>
+            <field name="code">CSUB</field>
+        </record>
+    </data>
+</odoo>

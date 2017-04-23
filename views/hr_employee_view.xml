@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+     <record id="l10n_cl_payroll_hr_employee_form" model="ir.ui.view">
+            <field name="name">l10n_cl_payroll.hr_employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+            <!--Movemos  -->
+            <field name="gender" position="replace"></field>
+            <field name="country_id" position="replace"></field>
+            <field name="birthday" position="replace"></field>
+            <field name="work_email" position="replace"></field>
+            <field name="work_phone" position="replace"></field>
+                 <page name="public" position="before" >
+                    <page name="public3" string="Básicos">
+                            <group>
+                                <group string="Datos Personales">
+                                    <field name="rh_rut" placeholder="24.063.888-6" required="1"/>
+                                    <field name="rh_middle_name"/>
+                                    <field name="rh_last_name" required="1"/>
+                                    <field name="rh_slast_name"/>
+                                    <field name="gender" required="1"/>
+                                    <field name="country_id" required="1"/>
+                                    <field name="birthday" required="1"/>
+                                </group>
+                                <group string="Datos Personales II">
+                                    <field name="work_email" string="Correo Electrónico"/>
+                                    <field name="work_phone"/>
+                                    <field name="rh_emergency"/>
+                                    <field name="rh_emergency_phone"/>
+                                </group>
+                            </group>
+                 </page>
+                 <page name="public2" string="Previsión y Salud">
+                            <group>
+                                <group string="Previsión">
+                                    <field name="rh_type_worker" required="1"/>
+                                    <field name="rh_type_prevision"/>
+                                    <field name="rh_afp_id"/>
+                                    <field name="rh_aporte_voluntario"/>
+                                </group>
+                                <group string="Salud">
+                                    <field name="isapre_id"/>
+                                    <field name="rh_isapre_pactado"/>
+                                    <field name="rh_type_isapre_moneda"/>
+                                </group>
+                            </group>
+                    </page>
+                    <page name="public3" string="A/D">
+                        <separator string="Cargas"/>
+                            <field name="rh_cargas_ids">
+                                <tree string="Cargas" editable="bottom">
+                                    <field name="list_run"/>
+                                    <field name="list_name"/>
+                                    <field name="list_nacimiento"/>
+                                    <field name="list_edad_limite"/>
+                                    <field name="list_tipo"/>
+                                    <field name="list_obs"/>
+                                </tree>
+                            </field>
+
+                       <separator string="Asignaciones"/>
+                            <field name="rh_asignaciones_ids">
+                                <tree string="Asignaciones" editable="bottom">
+                                    <field name="list_code"/>
+                                    <field name="list_glosa"/>
+                                    <field name="list_monto"/>
+                                    <field name="rh_type_isapre_moneda"/>
+                                    <field name="list_imponible"/>
+                                    <field name="desde_date"/>
+                                    <field name="hasta_date"/>
+                                    <field name="list_obs"/>
+                                </tree>
+                            </field>
+
+                            <separator string="Descuentos"/>
+                            <field name="rh_descuentos_ids">
+                                <tree string="Asignaciones" editable="bottom">
+                                    <field name="list_code"/>
+                                    <field name="list_glosa"/>
+                                    <field name="list_monto"/>
+                                    <field name="rh_type_isapre_moneda"/>
+                                    <field name="list_imponible"/>
+                                    <field name="desde_date"/>
+                                    <field name="hasta_date"/>
+                                    <field name="list_obs"/>
+                                </tree>
+                            </field>
+
+                    </page>
+                </page>
+            </field>
+        </record>
+</data>
+</odoo>

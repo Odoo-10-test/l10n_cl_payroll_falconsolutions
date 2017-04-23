@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+
+    <record id="view_form_rrhh_indicators" model="ir.ui.view">
+             <field name="name">view.form.rrhh.indicators</field>
+             <field name="model">rrhh.indicators</field>
+             <field name="arch" type="xml">
+                <form string="Indicadores de Isapre">
+                  <header>
+                  </header>
+                  <sheet>
+                    <legend>Indicadores de Previred</legend>
+
+<group>
+<group col="4">
+   <field name="name" />
+</group>
+
+<group col="4">
+   <button string="Ver Página de Indicadores Previred" type="object" name="go_to_link" class="oe_link"/>
+</group>
+
+  <group col="4" string="INDICADORES ECONÓMICOS" >
+
+<table class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>UF</th>
+        <th>UTM</th>
+        <th>UTA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="danger"><field name="ind_uf" required="1"></field></td>
+        <td><field name="ind_utm"></field></td>
+        <td><field name="ind_uta"></field></td>
+      </tr>
+    </tbody>
+  </table>
+  </group>
+
+<group col="4" string="TASA COTIZACIÓN OBLIGATORIO AFP">
+<table class="table table-bordered" style="margin-left:5px">
+    <thead>
+      <tr class="active">
+        <th>AFP</th>
+        <th>AFP DEP</th>
+        <th>SIS DEP</th>
+        <th>AFP INDEP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Capital</td>
+        <td><field name="ind_afp_capital_dependientes"></field></td>
+        <td><field name="ind_sis_capital_dependientes"></field></td>
+        <td><field name="ind_afp_capital_independientes"></field></td>
+      </tr>
+      <tr>
+        <td>Cuprum</td>
+        <td><field name="ind_afp_cuprum_dependientes"></field></td>
+        <td><field name="ind_sis_cuprum_dependientes"></field></td>
+        <td><field name="ind_afp_cuprum_independientes"></field></td>
+      </tr>
+     <tr>
+        <td>Habitad</td>
+        <td><field name="ind_afp_habitat_dependientes"></field></td>
+        <td><field name="ind_sis_habitat_dependientes"></field></td>
+        <td><field name="ind_afp_habitat_independientes"></field></td>
+      </tr>
+     <tr>
+        <td>Planvital</td>
+        <td><field name="ind_afp_planvital_dependientes"></field></td>
+        <td><field name="ind_sis_planvital_dependientes"></field></td>
+        <td><field name="ind_afp_planvital_independientes"></field></td>
+      </tr>
+     <tr>
+        <td>Provida</td>
+        <td><field name="ind_afp_provida_dependientes"></field></td>
+        <td><field name="ind_sis_provida_dependientes"></field></td>
+        <td><field name="ind_afp_provida_independientes"></field></td>
+      </tr>
+      <tr>
+        <td>Modelo</td>
+        <td><field name="ind_afp_modelo_dependientes"></field></td>
+        <td><field name="ind_sis_modelo_dependientes"></field></td>
+        <td><field name="ind_afp_modelo_independientes"></field></td>
+      </tr>
+    </tbody>
+  </table>
+  </group>
+
+
+<group col="4" string="RENTAS TOPES IMPONIBLES">
+<table class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>DESCRIPCION</th>
+        <th>VALOR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Para afiliados a una AFP <mark>(75,7 UF)</mark></td>
+        <td class="warning"><field name="ind_renta_tope_af_afp"></field></td>
+      </tr>
+      <tr>
+        <td>Para afiliados al IPS <mark>(60 UF)</mark></td>
+        <td class="warning"><field name="ind_renta_tope_af_ips"></field></td>
+      </tr>
+      <tr>
+        <td>Para Seguro de Cesantía <mark>(113,5 UF)</mark></td>
+        <td class="warning"><field name="ind_renta_tope_seg_cesantia"></field></td>
+      </tr>
+    </tbody>
+  </table>
+
+  </group>
+
+<group col="4" string="ASIGNACIÓN FAMILIAR">
+
+<table class="table table-bordered" style="margin-left:5px">
+    <thead>
+      <tr class="active">
+        <th>Tramo</th>
+        <th>Monto</th>
+        <th>Requisitos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A</td>
+        <td><field name="ind_asignacion_familiar_ma"></field></td>
+        <td><field name="ind_asignacion_familiar_t1"></field></td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td><field name="ind_asignacion_familiar_mb"></field></td>
+        <td><field name="ind_asignacion_familiar_t2"></field></td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td><field name="ind_asignacion_familiar_mc"></field></td>
+        <td><field name="ind_asignacion_familiar_t3"></field></td>
+      </tr>
+    <tr>
+        <td>D</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  </group>
+
+
+
+  <group col="4" string="RENTAS MÍNIMAS IMPONIBLES">
+<table class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>DESCRIPCION</th>
+        <th>VALOR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Trab. Dependientes e Independientes</td>
+        <td><field name="ind_sueldo_minimo"></field></td>
+      </tr>
+     <tr>
+        <td>Menores de 18 y Mayores de 65</td>
+        <td><field name="ind_sueldo_minimo_18_65"></field></td>
+      </tr>
+    <tr>
+        <td>Trabajadores de Casa Particular</td>
+        <td><field name="ind_sueldo_minimo_casa_particular"></field></td>
+      </tr>
+    <tr>
+        <td>Para fines no remuneracionales</td>
+        <td><field name="ind_sueldo_minimo_fines_no"></field></td>
+      </tr>
+    </tbody>
+  </table>
+
+  </group>
+
+<group col="4" string="COTIZACIÓN PARA TRABAJOS PESADOS">
+
+<table class="table table-bordered" style="margin-left:5px">
+    <thead>
+      <tr class="active">
+        <th>Tramo</th>
+        <th>Total</th>
+        <th>Empleador</th>
+        <th>Empleado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Trabajo pesado</td>
+        <td><field name="ind_trab_pesado_total"></field></td>
+        <td><field name="ind_trab_pesado_empleador"></field></td>
+        <td><field name="ind_trab_pesado_empleado"></field></td>
+      </tr>
+      <tr>
+        <td>Trabajo menos pesado</td>
+        <td><field name="ind_trab_menos_pesado_total"></field></td>
+        <td><field name="ind_trab_menos_pesado_empleador"></field></td>
+        <td><field name="ind_trab_menos_pesado_empleado"></field></td>
+      </tr>
+    </tbody>
+  </table>
+  </group>
+
+
+
+    <group col="4" string="AHORRO PREVISIONAL VOLUNTARIO (APV)">
+<table class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>DESCRIPCION</th>
+        <th>VALOR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tope Mensual <mark>(50 UF)</mark></td>
+        <td class="warning"><field name="ind_apv_tope_mensual">1323597</field></td>
+      </tr>
+      <tr>
+        <td>Tope Anual <mark>(600 UF)</mark></td>
+        <td class="warning"><field name="ind_apv_tope_anual">15883164</field></td>
+      </tr>
+    </tbody>
+  </table>
+
+  </group>
+
+<group col="4"></group>
+
+
+
+<group col="4" string="DEPÓSITO CONVENIDO">
+ <table class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>DESCRIPCION</th>
+        <th>VALOR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tope Anual  <mark>(900 UF)</mark></td>
+        <td class="warning"><field name="ind_deposito_convenio"></field></td>
+      </tr>
+    </tbody>
+  </table>
+</group><group col="4"></group>
+
+<group col="4" string="SEGURO DE CESANTÍA (AFC)">
+ <table class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>DESCRIPCION</th>
+        <th>EMPLEADOR</th>
+        <th>EMPLEADO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Contrato Plazo Indefinido</td>
+        <td><field name="ind_contrato_plazo_indefinido_empleador"></field></td>
+        <td><field name="ind_contrato_plazo_indefinido_trabajador"></field></td>
+      </tr>
+      <tr>
+        <td>Contrato Plazo Fijo</td>
+        <td><field name="ind_contrato_plazo_fijo_empleador"></field></td>
+        <td>-</td>
+      </tr>
+    <tr>
+        <td>Contrato Plazo Indefinido 11 años o más </td>
+        <td><field name="ind_contrato_plazo_indefinido_empleador_11"></field></td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</group><group col="4"></group>
+
+
+<group col="4" class="bg-success" >
+  <p><strong>UF:</strong> Unidad de fomento</p>
+  <p><strong>UTM:</strong> Unidad tributaria mensual</p>
+  <p><strong>UTA:</strong> Unidad tributaria anual</p>
+</group>
+
+<group col="4" class="bg-success" >
+  <p><strong>AFP:</strong> Administradora de fondo de pensiones</p>
+  <p><strong>AFP DEP:</strong> Tasa de AFP trabajadores dependientes</p>
+</group>
+
+</group>
+
+
+
+                   </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="view_tree_rrhh_indicators" model="ir.ui.view">
+             <field name="name">view.tree.rrhh.indicators</field>
+             <field name="model">rrhh.indicators</field>
+             <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+    </record>
+
+    <record id="action_rrhh_indicators" model="ir.actions.act_window">
+            <field name="name">Previred</field>
+            <field name="res_model">rrhh.indicators</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Presione para crear nuevo Registro</p>
+           </field>
+    </record>
+
+    <menuitem id="rrhh_indicator_menu"
+        name="Previred"
+        parent="menu_payroll_config"
+        sequence="0"
+        action="action_rrhh_indicators" />
+
+     </data>
+</odoo>

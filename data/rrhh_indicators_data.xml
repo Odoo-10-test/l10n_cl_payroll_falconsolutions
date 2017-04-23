@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="03/2017" model="rrhh.indicators">
+            <field name="name">03/2017</field>
+
+            <field name="ind_uf">26471.94</field>
+            <field name="ind_utm">46368</field>
+            <field name="ind_uta">556416</field>
+
+             <field name="ind_afp_capital_dependientes">11.44</field>
+             <field name="ind_sis_capital_dependientes">1.41</field>
+             <field name="ind_afp_capital_independientes">12.85</field>
+
+             <field name="ind_afp_cuprum_dependientes">11.48</field>
+             <field name="ind_sis_cuprum_dependientes">1.41</field>
+             <field name="ind_afp_cuprum_independientes">12.89</field>
+
+             <field name="ind_afp_habitat_dependientes">12.27</field>
+             <field name="ind_sis_habitat_dependientes">1.41</field>
+             <field name="ind_afp_habitat_independientes">12.68</field>
+
+             <field name="ind_afp_planvital_dependientes">10.41</field>
+             <field name="ind_sis_planvital_dependientes">1.41</field>
+             <field name="ind_afp_planvital_independientes">11.82</field>
+
+             <field name="ind_afp_provida_dependientes">11.54</field>
+             <field name="ind_sis_provida_dependientes">1.41</field>
+             <field name="ind_afp_provida_independientes">12.95</field>
+
+             <field name="ind_afp_modelo_dependientes">10.77</field>
+             <field name="ind_sis_modelo_dependientes">1.41</field>
+             <field name="ind_afp_modelo_independientes">12.18</field>
+
+             <field name="ind_renta_tope_af_afp">2003926</field>
+             <field name="ind_renta_tope_af_ips">1583525</field>
+             <field name="ind_renta_tope_seg_cesantia">3004565</field>
+
+             <field name="ind_asignacion_familiar_ma">10844</field>
+             <field name="ind_asignacion_familiar_t1">277016</field>
+
+             <field name="ind_asignacion_familiar_mb">6655</field>
+             <field name="ind_asignacion_familiar_t2">404613</field>
+
+             <field name="ind_asignacion_familiar_mc">2.104</field>
+             <field name="ind_asignacion_familiar_t3">631.058</field>
+
+             <field name="ind_asignacion_familiar_md">0</field>
+             <field name="ind_asignacion_familiar_t4">0</field>
+
+             <field name="ind_sueldo_minimo">264000</field>
+             <field name="ind_sueldo_minimo_18_65">197082</field>
+             <field name="ind_sueldo_minimo_casa_particular">264000</field>
+             <field name="ind_sueldo_minimo_fines_no">170296</field>
+
+             <field name="ind_trab_pesado_total">4</field>
+             <field name="ind_trab_pesado_empleador">2</field>
+             <field name="ind_trab_pesado_empleado">2</field>
+
+             <field name="ind_trab_menos_pesado_total">2</field>
+             <field name="ind_trab_menos_pesado_empleador">1</field>
+             <field name="ind_trab_menos_pesado_empleado">1</field>
+
+             <field name="ind_apv_tope_mensual">1323597</field>
+             <field name="ind_apv_tope_anual">15883164</field>
+
+             <field name="ind_deposito_convenio">23824746</field>
+
+             <field name="ind_contrato_plazo_indefinido_empleador">2.4</field>
+             <field name="ind_contrato_plazo_indefinido_trabajador">0.6</field>
+             <field name="ind_contrato_plazo_fijo_empleador">3</field>
+             <field name="ind_contrato_plazo_indefinido_empleador_11">0.8</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"l10n_cl_payroll_indicators","l10n_cl_payroll_indicators","model_rrhh_indicators","hr.group_hr_manager",1,1,1,1
+"l10n_cl_payroll_contract","l10n_cl_payroll_contract","model_hr_contract","hr.group_hr_manager",1,1,1,1
+"l10n_cl_payroll_payslip","l10n_cl_payroll_payslip","model_hr_payslip","hr.group_hr_manager",1,1,1,1
+"l10n_cl_payroll_afp","l10n_cl_payroll_afp","model_rrhh_afp","hr.group_hr_manager",1,1,1,1
+"l10n_cl_payroll_indicators","l10n_cl_payroll_indicators","model_rrhh_indicators","hr.group_hr_manager",1,1,1,1
+"l10n_cl_payroll_isapre","l10n_cl_payroll_isapre","model_rrhh_isapre","hr.group_hr_manager",1,1,1,1
+
