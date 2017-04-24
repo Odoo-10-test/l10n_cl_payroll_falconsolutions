@@ -92,5 +92,19 @@
                 </page>
             </field>
         </record>
+
+    <record model="ir.ui.view" id="hr_kanban_view_employees_chile">
+        <field name="name">hr.kanban.view.employees.chile</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_kanban_details']//field[@name='name']" position="after">
+                <br></br>
+                <strong class="oe_partner_heading"><field name="rh_rut"/></strong>
+            </xpath>
+        </field>
+    </record>
+
+
 </data>
 </odoo>
