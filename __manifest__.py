@@ -39,8 +39,6 @@ Recursos Humanos Chile con Previred
     'data': [
 
         'views/hr_employee_view.xml',
-        'views/hr_salary_rule_view.xml',
-
         'views/rrhh_view.xml',
         'views/rrhh_isapre_view.xml',
         'views/rrhh_indicators_view.xml',
