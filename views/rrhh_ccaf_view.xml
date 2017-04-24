@@ -6,9 +6,7 @@
              <field name="name">view.form.rrhh.ccaf</field>
              <field name="model">rrhh.ccaf</field>
              <field name="arch" type="xml">
-                <form string="Listado de ccaf">
-                  <header>
-                  </header>
+                <form string="Listado de CCAF">
                   <sheet>
                     <legend>CCAF</legend>
                        <group>
@@ -27,7 +25,7 @@
              <field name="model">rrhh.ccaf</field>
              <field name="arch" type="xml">
                 <tree>
-                    <field name="codigo"/>
+                   <field name="codigo"/>
                     <field name="name"/>
                 </tree>
             </field>
