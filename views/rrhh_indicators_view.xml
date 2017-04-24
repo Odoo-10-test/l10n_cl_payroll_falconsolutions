@@ -238,7 +238,34 @@
 
   </group>
 
-<group col="4"></group>
+<group col="4" string="DATOS EMPRESA MUTUAL/CAJA">
+<table class="table table-bordered" style="margin-left:5px">
+    <thead>
+      <tr class="active">
+        <th>DESCRIPCION</th>
+        <th>VALOR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nombre Mutual</td>
+        <td  class="info"><field name="emp_mutual_nombre"></field></td>
+      </tr>
+      <tr>
+        <td>Valor Mutual <mark>%</mark></td>
+        <td  class="info"><field name="emp_mutual_valor"></field></td>
+      </tr>
+      <tr>
+        <td>Nombre Caja Compensación</td>
+        <td  class="info"><field name="emp_caja_compensacion_nombre"></field></td>
+      </tr>
+      <tr>
+        <td>Valor Caja Compensación <mark>%</mark></td>
+        <td  class="info"><field name="emp_caja_valor"></field></td>
+      </tr>
+    </tbody>
+  </table>
+</group>
 
 
 

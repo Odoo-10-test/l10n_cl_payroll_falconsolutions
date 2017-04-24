@@ -48,7 +48,7 @@
                             </group>
                     </page>
                     <page name="public3" string="A/D">
-                        <separator string="Cargas"/>
+                        <separator string="Cargas/Asignaciones familiares"/>
                             <field name="rh_cargas_ids">
                                 <tree string="Cargas" editable="bottom">
                                     <field name="list_run"/>
@@ -60,7 +60,7 @@
                                 </tree>
                             </field>
 
-                       <separator string="Asignaciones"/>
+                       <separator string="Asignaciones/Haberes"/>
                             <field name="rh_asignaciones_ids">
                                 <tree string="Asignaciones" editable="bottom">
                                     <field name="list_code"/>

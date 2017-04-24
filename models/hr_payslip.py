@@ -6,4 +6,4 @@ from odoo import api, fields, models
 class hr_payslip(models.Model):
 
     _inherit = 'hr.payslip'
-    ind_id = fields.Many2one('rrhh.indicators', 'Indicadores Previred', required="1")
+    ind_id = fields.Many2one('rrhh.indicators', 'Indicadores Previred')
