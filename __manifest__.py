@@ -45,6 +45,8 @@ Recursos Humanos Chile con Previred
         'views/hr_payslip_view.xml',
         'views/rrhh_afp_view.xml',
         'views/hr_contract_view.xml',
+        'views/rrhh_mutual_view.xml',
+        'views/rrhh_ccaf_view.xml',
 
         'data/rrhh_isapre_data.xml',
         'data/rrhh_afp_data.xml',
@@ -54,6 +56,8 @@ Recursos Humanos Chile con Previred
         'data/rrhh_indicators_data.xml',
         'data/hr_calendar_data.xml',
         'data/hr_calendar_data.xml',
+        'data/rrhh_mutual_data.xml',
+        'data/rrhh_ccaf_data.xml',
 
     ],
     'installable': True,

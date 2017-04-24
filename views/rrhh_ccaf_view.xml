@@ -2,19 +2,18 @@
  <odoo>
     <data>
 
-    <record id="view_form_rrhh_isapre" model="ir.ui.view">
-             <field name="name">view.form.rrhh.isapre</field>
-             <field name="model">rrhh.isapre</field>
+    <record id="view_form_rrhh_ccaf" model="ir.ui.view">
+             <field name="name">view.form.rrhh.ccaf</field>
+             <field name="model">rrhh.ccaf</field>
              <field name="arch" type="xml">
-                <form string="Listado de Isapres ">
+                <form string="Listado de ccaf">
                   <header>
                   </header>
                   <sheet>
-                    <legend>Grupo APU</legend>
+                    <legend>CCAF</legend>
                        <group>
                           <group>
                              <field name="codigo"/>
-                             <field name="rut"/>
                              <field name="name"/>
                           </group>
                        </group>
@@ -23,21 +22,20 @@
             </field>
     </record>
 
-    <record id="view_tree_rrhh_isapre" model="ir.ui.view">
-             <field name="name">view.tree.rrhh.isapre</field>
-             <field name="model">rrhh.isapre</field>
+    <record id="view_tree_rrhh_ccaf" model="ir.ui.view">
+             <field name="name">view.tree.rrhh.ccaf</field>
+             <field name="model">rrhh.ccaf</field>
              <field name="arch" type="xml">
                 <tree>
                     <field name="codigo"/>
-                    <field name="rut"/>
                     <field name="name"/>
                 </tree>
             </field>
     </record>
 
-    <record id="action_rrhh_isapre" model="ir.actions.act_window">
-            <field name="name">Isapres</field>
-            <field name="res_model">rrhh.isapre</field>
+    <record id="action_rrhh_ccaf" model="ir.actions.act_window">
+            <field name="name">CCAF</field>
+            <field name="res_model">rrhh.ccaf</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -46,11 +44,11 @@
            </field>
     </record>
 
-    <menuitem id="rrhh_isapre_menu"
-        name="Salud"
+    <menuitem id="rrhh_ccaf_menu"
+        name="CCAF"
         parent="menu_payroll_config"
-        sequence="30"
-        action="action_rrhh_isapre" />
+        sequence="35"
+        action="action_rrhh_ccaf" />
 
      </data>
 </odoo>

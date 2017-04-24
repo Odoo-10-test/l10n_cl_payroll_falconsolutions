@@ -88,7 +88,9 @@ class rrhh_indicators(models.Model):
     ind_mutual = fields.Float('Mutual de Seguridad')
 
     # Campos de la compañia
-    emp_mutual_nombre = fields.Char('Nombre Mutual')
+    mutual_id = fields.Many2one('rrhh.mutual', 'Mutual', help="Nombre Mutual")
+    ccaf_id = fields.Many2one('rrhh.ccaf', 'CCAF', help="CCAF")
+
     emp_mutual_valor = fields.Float('Valor Mutual')
 
     emp_caja_compensacion_nombre = fields.Char('Nombre Caja Compensación')

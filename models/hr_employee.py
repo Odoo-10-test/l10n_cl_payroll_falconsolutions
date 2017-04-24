@@ -116,19 +116,20 @@ class HrEmploye(models.Model):
     ###### PREVISION Y SALUD ######
 
     rh_type_worker = fields.Selection(
-            [('1','Activo (no pensionado)'),
-            ('2','Pensionado y cotiza'),
-            ('3 ','Pensionado y no cotiza '),
-            ('4','Activo > 65 años (nunca pensionado)')],
-            'Tipo trabajador', size=1 ,default='1')
+            [('0','Activo (no pensionado)'),
+             ('1','Pensionado y cotiza'),
+             ('2 ','Pensionado y no cotiza '),
+             ('3','Activo > 65 años (nunca pensionado)')],
+             'Tipo trabajador', size=1 ,default='0')
 
     rh_type_prevision = fields.Selection(
-            [('1','Sin Institución Previsional'),
-            ('2','AFP'),
-            ('3 ','IPS(ex INP)')],
-            'Previsión', size=1 ,default='2')
+            [('SIP','Sin Institución Previsional'),
+             ('AFP','AFP'),
+             ('INP ','IPS(ex INP)')],
+            'Previsión', size=1 ,default='SIP')
 
     rh_afp_id = fields.Many2one('rrhh.afp', 'AFP')
+
     rh_aporte_voluntario = fields.Integer(
         'APV en AFP', help="Monto en pesos que el trabajador ahorra voluntariamente en la AFP")
 
@@ -138,7 +139,7 @@ class HrEmploye(models.Model):
 
     rh_type_isapre_moneda = fields.Selection(
             [('1','Pesos'),
-            ('2','UF')],
+             ('2','UF')],
             'Salud Moneda', size=1 ,default='1', help="Sólo si es Isapre, ¿cuál es la moneda de la cotización pactada con la Isapre?")
 
 

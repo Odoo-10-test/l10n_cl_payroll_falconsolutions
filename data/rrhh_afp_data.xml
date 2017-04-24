@@ -3,15 +3,13 @@
     <data noupdate="1">
         <record id="rrhh_afp_01" model="rrhh.afp">
             <field name="name">Capital</field>
-            <field name="rut">00000000-0</field>
-            <field name="codigo">34</field>
+            <field name="codigo">33</field>
             <field name="tasa">11.44</field>
             <field name="sis">1.41</field>
             <field name="independiente">12.85</field>
         </record>
         <record id="rrhh_afp_02" model="rrhh.afp">
             <field name="name">Cuprum</field>
-            <field name="rut">00000000-0</field>
             <field name="codigo">03</field>
             <field name="tasa">11.48</field>
             <field name="sis">1.41</field>
@@ -19,23 +17,20 @@
         </record>
         <record id="rrhh_afp_03" model="rrhh.afp">
             <field name="name">Habitat</field>
-            <field name="rut">05</field>
-            <field name="codigo">00000000-0</field>
+            <field name="codigo">05</field>
             <field name="tasa">12.27</field>
             <field name="sis">1.41</field>
             <field name="independiente">12.68</field>
         </record>
         <record id="rrhh_afp_04" model="rrhh.afp">
             <field name="name">PlanVital</field>
-            <field name="rut">00000000-0</field>
             <field name="codigo">29</field>
             <field name="tasa">10.41</field>
             <field name="sis">1.41</field>
             <field name="independiente">12.82</field>
         </record>
         <record id="rrhh_afp_05" model="rrhh.afp">
-            <field name="name">ProVida</field>
-            <field name="rut">00000000-0</field>
+            <field name="name">Provida</field>
             <field name="codigo">08</field>
             <field name="tasa">11.54</field>
             <field name="sis">1.41</field>
@@ -43,15 +38,13 @@
         </record>
         <record id="rrhh_afp_06" model="rrhh.afp">
             <field name="name">Modelo</field>
-            <field name="rut">00000000-0</field>
-            <field name="codigo">00000000-0</field>
+            <field name="codigo">34</field>
             <field name="tasa">10.77</field>
             <field name="sis">1.41</field>
             <field name="independiente">12.18</field>
         </record>
         <record id="rrhh_afp_no" model="rrhh.afp">
             <field name="name">No esta</field>
-            <field name="rut">00000000-0</field>
             <field name="codigo">00</field>
             <field name="tasa">0.0</field>
             <field name="sis">0.0</field>

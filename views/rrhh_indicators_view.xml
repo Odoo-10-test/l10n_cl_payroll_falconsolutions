@@ -249,7 +249,7 @@
     <tbody>
       <tr>
         <td>Nombre Mutual</td>
-        <td  class="info"><field name="emp_mutual_nombre"></field></td>
+        <td  class="info"><field name="mutual_id"></field></td>
       </tr>
       <tr>
         <td>Valor Mutual <mark>%</mark></td>
@@ -257,7 +257,7 @@
       </tr>
       <tr>
         <td>Nombre Caja Compensación</td>
-        <td  class="info"><field name="emp_caja_compensacion_nombre"></field></td>
+        <td  class="info"><field name="ccaf_id"></field></td>
       </tr>
       <tr>
         <td>Valor Caja Compensación <mark>%</mark></td>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="rrhh_mutual_01" model="rrhh.mutual">
+            <field name="codigo">00</field>
+            <field name="name">Sin Mutual - Empresa entrega aporte Accidentes del Trabajo al ISL</field>
+        </record>
+        <record id="rrhh_mutual_02" model="rrhh.mutual">
+            <field name="codigo">01</field>
+            <field name="name">Asociación Chilena de Seguridad (ACHS)</field>
+        </record>
+        <record id="rrhh_mutual_03" model="rrhh.mutual">
+            <field name="codigo">02</field>
+            <field name="name">Mutual de Seguridad CCHC</field>
+        </record>
+        <record id="rrhh_mutual_04" model="rrhh.mutual">
+            <field name="codigo">03</field>
+            <field name="name">Instituto de Seguridad del Trabajo I.S.T.</field>
+        </record>
+    </data>
+</odoo>

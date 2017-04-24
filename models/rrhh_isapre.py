@@ -9,3 +9,4 @@ class rrhh_isapre(models.Model):
     _name = 'rrhh.isapre'
     name = fields.Char('Name', translate=True)
     rut = fields.Char('Rut', translate=True)
+    codigo = fields.Integer('Codigo')
