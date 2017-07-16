@@ -1,1 +1,2 @@
-# Módulo de Recursos Humanos Chile construccion no terminado !!
+# Módulo de Recursos Humanos Chile
+No terminado...
